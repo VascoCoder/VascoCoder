@@ -1,0 +1,332 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+	font-size: 100%;
+	box-sizing: border-box;
+	/*overflow: hidden; Ocultar a barra de navegação*/
+
+}
+
+header{
+	width: 100%;
+	background-color: white;
+	top: 0;
+	left: 0;
+	display: flex;
+	padding: 20px 50px;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+header img{
+	width: 50px;
+	border-radius: 50px;
+
+}
+header nav ul{
+	display: block;
+
+}
+header li a {
+	color: #191c03;
+}
+header li{
+	padding: 0 15px;
+}
+@media (max-width: 700px){
+	header{
+	flex-direction: column;
+	
+	}
+	header img{
+		margin-bottom: 15px;
+	}
+}
+.pub{
+	background-image: url(IMG/bg_2.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	flex-direction: column;
+}
+.pub h1{
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+}
+.pub h3{
+
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+.pub button{
+	background-color: white;
+	color: #191c03;
+	padding: 20px 50px;
+	border-radius: 40px;
+
+} 
+
+}
+@media (max-width: 700px){
+
+	.pub h1{
+		font-size: 2.3rem;
+	}
+	.pub h3{
+		font-size: 1.5rem;
+	}
+}
+
+.inf{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+
+}
+.inf h3{
+	font-size: 3rem;
+
+	margin-bottom: 30px;
+	color: #191c03;
+	text-align: center;
+}
+.inf p{
+
+	ax-width: 800px;
+	margin-bottom: 35px;
+	color: #191c03;
+}
+.inf hr{
+	width: 200px;
+	height: 2px;
+	background-color:#191c03;
+	margin-bottom: 70px;
+	border: none;
+}
+
+.inf .grid{
+
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inf .grid li{
+	list-style: none;
+
+	height: 350px;
+	padding: 20px;
+	border-radius: 4px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+.inf .grid li.short {
+	flex-basis: 40%;
+}
+
+.inf .grid li.big {
+	flex-basis: 60%;
+}
+
+@media (max-width: 700px)
+{
+	.inf .grid li.short {
+	flex-basis: 100%;
+}
+.inf .grid li.big {
+	flex-basis: 100%;
+}
+
+}
+.carat {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px 5px;
+	background-color:#191c03;
+}
+.carat h3{
+	text-align: center;
+	color: #fff;
+	font-size: 3rem;
+	margin-bottom: 35px;
+}
+.carat p{
+	text-align: center;
+	max-width: 800px;
+	margin-bottom: 35px;
+	color: #fff;
+}
+.carat hr{
+
+	width: 200px;
+	height: 2px;
+	background-color: #fff;
+	margin-bottom: 70px;
+	border: none;
+}
+.carat .grid{
+
+	display: flex;
+	width: 100%;
+}
+.carat .grid li{
+	padding: 0 30px;
+	text-align: center;
+
+}
+.carat .grid li .fa-location-arrow, .fa-gift, .fa-home{
+
+	color: #c3c63b;
+	font-size: 50px;
+	margin-bottom: 30px;
+
+}
+
+.carat .grid li h4{
+
+	font-size: 1.4rem;
+	color: #c3c63b;
+	margin-bottom: 30px;
+
+}
+@media (max-width: 700px){
+	.carat .grid{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0px;
+	align-items: center;
+}
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+
+}
+footer ul li{
+	margin-right: 10px;
+}
+footer ul li:last-child {
+	margin-right: 0;
+
+}
+footer ul li a{
+	color: white;
+	font-size: 2rem;
+
+}
+footer p{
+	color: white;
+	text-align: center;
+}
+.gps{
+  
+  background-color: white;
+}
+
+
+
+/* Serviços */
+
+.service-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4 {
+  transition: .5s;
+}
+
+.service-box i {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.service-box h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h4 {
+  color: #65DAF9;
+}
+.panel-footer {
+  
+  background-color: gray;
+}
+
+
+/*.rsocial { text-align: center; 
+}
+ .rsocial ul {
+   display:inline-table;
+ }
+ .rsocial li { 
+   display:inline; 
+ }*/
+ .row {
+	margin: 0;
+  }
+  
+  .container {
+	padding: 70px 0;
+  }
+
+  /* Dados */
+
+ .circle-box div {
+	padding: 0 40px;
+  }
+  
+  .progressbar-text {
+	font-weight: bold;
+	font-size: 32px;
+  }
+  
+  #data-area p {
+	color: rgb(104, 131, 153);
+	text-align: center;
+	font-size: 26px;
+	margin-top: 20px;
+  }
+
+  .main-title {
+	color: #444;
+	margin: 0 0 65px 0;
+	font-size: 40px;
+	text-align: center;
+  }
+
+  .card-tex{
+
+background-color: #191c03;
+color: black;
+
+  }
+
+  /*Formatando o card*/
+
+  .card-text{
+
+	
+	color: #191c03;
+  }
+
+
+
